@@ -1,4 +1,5 @@
 package sample;
+
 import java.util.Scanner;
 
 public class Burger {
@@ -10,12 +11,13 @@ public class Burger {
     private String extras;
 
     //konstruktor
-    public Burger( String name, String meatType, String breadType, int price) {
+    public Burger(String name, String meatType, String breadType, int price) {
         this.name = name;
         this.meatType = meatType;
         this.breadType = breadType;
         this.price = price;
     }
+
     public String name() {
         return name;
     }
@@ -39,67 +41,25 @@ public class Burger {
         double[] burgerPrices = {6.50, 8.50, 9.50};
         double[] extrasPrices = {2.00, 1.50, 1.00, 0.75};
 
-        public String[] getBurgers() {
-            return burgers;
-        }
 
-        public String[] getExtras() {
-            return extras;
-        }
+        Scanner input = new Scanner(System.in);
+        System.out.println("Vali burger");
+        burgers[i] = input.nextDouble()
+        String[] burgers = {"Chicken burger", "Old Fashioned Cheeseburger", "New York Burger"};
+                if (burgers.equals(answer, "Chicken burger"[0]) || burgers.equals(answer,"Old Fashioned Cheeseburger"[1]) ||
+                burgers.equals(answer,"New York Burger"[2])])
 
-        public int getBurgersQuantity() {
-            return burgersQuantity;
-        }
-
-        public int getExtrasQuantity() {
-            return extrasQuantity;
-        }
-
-        public double[] getBurgerPrices() {
-            return burgerPrices;
-        }
-
-        public double[] getExtrasPrices() {
-            return extrasPrices;
-        }
-
-        public void setBurgers(String[] burgers) {
-            this.burgers = burgers;
-        }
-
-        public void setExtras(String[] extras) {
-            this.extras = extras;
-        }
-
-        public void setBurgerPrices(double[] burgerPrices) {
-            this.burgerPrices = burgerPrices;
-        }
-
-        public void setExtrasPrices(double[] extrasPrices) {
-            this.extrasPrices = extrasPrices;
-        }
-
-        public void setBurgersQuantity(int burgersQuantity) {
-            this.burgersQuantity = burgersQuantity;
-        }
-
-        public void setExtrasQuantity(int extrasQuantity) {
-            this.extrasQuantity = extrasQuantity;
-        }
-        // int burgersQuantity = 0;
-        //int extrasQuantity = 0;
-
-        //public void placeOrder( String burgers, String extras, double burgerPrices, double extrasPrices, int burgersQuantity, int extrasQuantity) {
-        //boolean orderPlaced = false;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Vali lisand")
+        extras[i] = input.nextDouble()
+        String[] extras = {"Bacon", "Peppers", "Eggs", "Pickles"};
+                if (extras.equals(answer, "Bacon"[0]) || extras.equals(answer,"Peppers"[1]) ||
+                extras.equals(answer,"Eggs"[2]) || extras.equals(answer,"Pickles"[3]) ])
 
 
+            System.out.println("Sinu tellimuse "+burgersQuantity +" "+burgers +"lisandiga "+extrasQuantity +extras +" maksumus on: "+price +" EUR.");
 
-        double price = burgerPrices * burgersQuantity + extrasPrices * extrasQuantity ;
-            System.out.println("Sinu tellimuse " + burgersQuantity + " " + burgers + "lisandiga " + extrasQuantity + extras + " maksumus on: " + price + " EUR.");
-
-
-
-
+                    System.out.println( "MENÜÜ");
                     System.out.println();
                     System.out.println("Chicken burger - kanalihaga, valge saiaga.  Lisandite valik koosneb juustust, salatist, tomatist, maioneesist. - Hind 6.50 EUR");
                     System.out.println("Old Fashioned Cheeseburger - loomalihaga, valge saiaga.  Lisandite valik koosneb peekonist, kurgist, sibulast ja pekooni kastest. - Hind 8.50 EUR");
@@ -109,16 +69,6 @@ public class Burger {
                     System.out.println("    Peppers - 1.50 EUR");
                     System.out.println("    Eggs - 1.00 EUR");
                     System.out.println("    Pickles - 0.70 EUR");
-
-                    System.out.println();
-        Scanner in = new Scanner(System.in);
-                    System.out.println("Millist burgerit soovid? ");
-        String burgers = in.nextLine();
-
-        Scanner in = new Scanner(System.in);
-                    System.out.print("Millist lisandit soovid? ");
-        String extras = in.nextLine();
-
 
     }
 }
