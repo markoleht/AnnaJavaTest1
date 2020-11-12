@@ -41,6 +41,18 @@ public class Burger {
         double[] burgerPrices = {6.50, 8.50, 9.50};
         double[] extrasPrices = {2.00, 1.50, 1.00, 0.75};
 
+        public double Order(Burger burgers) {
+            this.double[] burgerPrices += this.double[] extrasPrices;
+            System.out.println("Teie tellimus kokku: ");
+            System.out.println(price);
+            return price();
+
+            public Double Order(Burger burgers)
+        }
+
+
+
+
 
         Scanner input = new Scanner(System.in);
         System.out.println("Vali burger");
